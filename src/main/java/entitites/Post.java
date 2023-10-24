@@ -3,11 +3,12 @@ package entitites;
 import lombok.Data;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @Data
 public class Post {
-    private Data moment;
+    private Date moment;
     private String title;
     private String content;
     private Integer likes;
@@ -15,10 +16,10 @@ public class Post {
 
     private List<Comment> comments = new ArrayList<>();
 
-    public Post(Data moment) {
+    public Post(Date moment) {
     }
 
-    public Post(Data moment, String title, String content, Integer likes, List<Comment> comments) {
+    public Post(Date moment, String title, String content, Integer likes) {
         this.moment = moment;
         this.title = title;
         this.content = content;
