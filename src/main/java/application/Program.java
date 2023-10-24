@@ -23,7 +23,8 @@ public class Program
                 "Traveling to New Zeland",
                 "I'm going to visit this wonderful country!",
                 12);
-
+        p1.addComment(c1);
+        p1.addComment(c2);
 
     }
 }
